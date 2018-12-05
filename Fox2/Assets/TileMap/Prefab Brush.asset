@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: Prefab Brush
   m_EditorClassIdentifier: 
   m_Prefabs:
-  - {fileID: 1089324839363818, guid: b074f7ec42e614111acb1ecd373d8900, type: 2}
+  - {fileID: 1046464055381330, guid: 5d28b68bc43fc4ca28463fe626d6520b, type: 2}
   m_PerlinScale: 0.5
   m_Z: 0
