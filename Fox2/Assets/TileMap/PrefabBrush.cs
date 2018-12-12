@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿
+
+using UnityEngine;
 
 namespace UnityEditor
 {
+    #if (UNITY_EDITOR) 
+
     [CreateAssetMenu]
     [CustomGridBrush(false, true, false, "Prefab Brush")]
     public class PrefabBrush : GridBrushBase
@@ -85,4 +89,8 @@ namespace UnityEditor
             m_SerializedObject.ApplyModifiedPropertiesWithoutUndo();
         }
     }
+
+    #endif
 }
+
+
