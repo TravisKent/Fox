@@ -18,12 +18,34 @@ public Image heart4;
 public bool playerDead;
 public LevelLoader LevelManager;
 public string currentLevel;
-	// Use this for initialization
-	void Start () {
+
+public bool orangekey;
+public bool Bluekey;
+public bool greenkey;
+public bool yellowkey;
+
+public Image keyemptykey1;
+public Image keyemptykey2;
+public Image keyemptykey3;
+public Image keyemptykey4;
+    public Image keyfullkey1;
+    public Image keyfullkey2;
+    public Image keyfullkey3;
+    public Image keyfullkey4;
+
+
+    // Use this for initialization
+    void Start () {
 		HP=4;
 		damageImmune = false;
 		damageTimer = dmgTime;
-	}
+
+        orangekey = false;
+        Bluekey = false;
+        greenkey = false;
+        yellowkey = false;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -39,8 +61,10 @@ public string currentLevel;
 				playerImage.color = Color.white;
 			}
 		}
-		
-		HealthUIrefresh();
+
+        KeyImageUpdate();
+
+        HealthUIrefresh();
 		if(HP <=0)
 		{
 			//signal player is dead and reload
@@ -109,5 +133,72 @@ public string currentLevel;
 			TakeDamage();
 			damageImmune = true;		
 		}
+    }
+
+    public void KeyCollected(int key)
+    {
+        if(key ==0)
+        {
+            orangekey = true;
+        }
+        if (key == 1)
+        {
+            Bluekey = true;
+        }
+        if (key == 2)
+        {
+            greenkey = true;
+        }
+        if (key == 3)
+        {
+            yellowkey = true;
+        }
+    }
+
+    public void KeyImageUpdate()
+    {
+       if( orangekey)
+        {
+           // Debug.Log("turn on orange key");
+            keyemptykey1.enabled = false;
+            keyfullkey1.enabled = true;
+        }
+        else if (!orangekey)
+        {
+            //Debug.Log("turn on orange key");
+            keyemptykey1.enabled = true;
+            keyfullkey1.enabled = false;
+        }
+        if (Bluekey)
+        {
+            keyemptykey2.enabled = false;
+            keyfullkey2.enabled = true;
+        }
+        else if (!Bluekey)
+        {
+            keyemptykey2.enabled = true;
+            keyfullkey2.enabled = false;
+        }
+        if (greenkey)
+        {
+            keyemptykey3.enabled = false;
+            keyfullkey3.enabled = true;
+        }
+        else if (!greenkey)
+        {
+            keyemptykey3.enabled = true;
+            keyfullkey3.enabled = false;
+        }
+        if (yellowkey)
+        {
+            keyemptykey4.enabled = false;
+            keyfullkey4.enabled = true;
+        }
+        else if (!yellowkey)
+        {
+            keyemptykey4.enabled = true;
+            keyfullkey4.enabled = false;
+        }
+
     }
 }
