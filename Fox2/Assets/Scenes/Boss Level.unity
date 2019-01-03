@@ -653,11 +653,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 26
       objectReference: {fileID: 0}
-    - target: {fileID: 114674311264133696, guid: cf25d8ad469c24724873012a8e2e8197,
-        type: 2}
-      propertyPath: level2Load
-      value: Boss Level
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf25d8ad469c24724873012a8e2e8197, type: 2}
   m_IsPrefabAsset: 0
