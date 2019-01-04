@@ -22,7 +22,7 @@ public Rigidbody2D rb;
 	}
 	void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Enemy")
+        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "boss"  )
 		{
 			//do something
 			col.gameObject.GetComponent<DeathByFireball>().TakeDamage(damageValue);

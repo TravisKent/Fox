@@ -42,5 +42,17 @@ public class Spawn_Ghosts : MonoBehaviour {
 
             counter01 = ghost1Timer;
         }
+        if (counter02 <= 0)
+        {
+            Instantiate(GhostPrefab, GhostSpawn_2.position, GhostSpawn_2.rotation);
+
+            counter02 = ghost2Timer;
+        }
+        if (counter03 <= 0)
+        {
+            Instantiate(GhostPrefab, GhostSpawn_3.position, GhostSpawn_3.rotation);
+
+            counter03 = ghost2Timer;
+        }
     }
 }

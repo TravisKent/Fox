@@ -20,5 +20,9 @@ public int health;
 	public void TakeDamage(int damage)
 	{
 		health = health-damage;
+		if(gameObject.tag== "boss")
+		{
+		gameObject.transform.localScale =  gameObject.transform.localScale - new Vector3(0.5f,0.5f,0.5f);
+		}
 	}
 }
