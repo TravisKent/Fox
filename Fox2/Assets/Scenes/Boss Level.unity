@@ -8698,7 +8698,7 @@ MonoBehaviour:
   GhostPrefab: {fileID: 1929473026034206, guid: 918b10133eba0d54b8820b2012c21a2a,
     type: 3}
   ghost1Timer: 7
-  ghost2Timer: 10
+  ghost2Timer: 8
   ghost3Timer: 5
   counter01: 0
   counter02: 0
