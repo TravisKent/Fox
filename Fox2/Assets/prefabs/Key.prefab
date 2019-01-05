@@ -275,8 +275,8 @@ MonoBehaviour:
   - {fileID: 21300030, guid: 51bc073bc27e44acebfc1bec4203aefa, type: 3}
   - {fileID: 21300028, guid: 51bc073bc27e44acebfc1bec4203aefa, type: 3}
   orangekey: 0
-  Bluekey: 0
-  greenkey: 1
+  Bluekey: 1
+  greenkey: 0
   yellowkey: 0
   myImage: {fileID: 1320258208213490}
   sfx: {fileID: 82379768160507482}

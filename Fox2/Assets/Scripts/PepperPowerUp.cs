@@ -39,4 +39,11 @@ public class PepperPowerUp : MonoBehaviour {
 			
 		}
     }
+
+    public void Reset()
+    {
+        disableWhenDone = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+    }
 }
