@@ -58,11 +58,45 @@ public bool disableWhenDone;
 		if(col.gameObject.tag =="Player")
 		{
 			//Check to see if player has a correct key
-			sfx.Play();
-			disableWhenDone = true;
-			myCollider.SetActive(false);
-			myImage.SetActive(false);
-        	//gameObject.SetActive(false);
-		}
+            if(col.gameObject.GetComponent<PlayerHealth>() !=null)
+            {
+                Debug.Log("The game object has a player health object");
+                if (col.gameObject.GetComponent<PlayerHealth>().orangekey && orangeDoor)
+                {
+                    sfx.Play();
+                    disableWhenDone = true;
+                    myCollider.SetActive(false);
+                    myImage.SetActive(false);
+                    //gameObject.SetActive(false);
+                }
+               else if (col.gameObject.GetComponent<PlayerHealth>().Bluekey && BlueDoor)
+                {
+                    sfx.Play();
+                    disableWhenDone = true;
+                    myCollider.SetActive(false);
+                    myImage.SetActive(false);
+                    //gameObject.SetActive(false);
+                }
+                else if (col.gameObject.GetComponent<PlayerHealth>().greenkey && greenDoor)
+                {
+                    sfx.Play();
+                    disableWhenDone = true;
+                    myCollider.SetActive(false);
+                    myImage.SetActive(false);
+                    //gameObject.SetActive(false);
+                }
+                else if (col.gameObject.GetComponent<PlayerHealth>().yellowkey && yellowDoor)
+                {
+                    sfx.Play();
+                    disableWhenDone = true;
+                    myCollider.SetActive(false);
+                    myImage.SetActive(false);
+                    //gameObject.SetActive(false);
+                }
+            }
+
+
+
+        }
     }
 }
