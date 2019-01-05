@@ -52,7 +52,7 @@ public class Spawn_Ghosts : MonoBehaviour {
         {
             Instantiate(GhostPrefab, GhostSpawn_3.position, GhostSpawn_3.rotation);
 
-            counter03 = ghost2Timer;
+            counter03 = ghost3Timer;
         }
     }
 }
