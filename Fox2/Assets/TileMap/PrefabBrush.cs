@@ -3,7 +3,7 @@
 using UnityEngine;
 
 namespace UnityEditor
-{
+{/*
     #if (UNITY_EDITOR) 
 
     [CreateAssetMenu]
@@ -91,6 +91,7 @@ namespace UnityEditor
     }
 
     #endif
+    */
 }
 
 
